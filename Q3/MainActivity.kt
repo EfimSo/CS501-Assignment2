@@ -62,15 +62,15 @@ fun FunFact(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center
     ) {
         Text( 
-        text = names[i],
-        fontSize = 40.sp,
-        fontWeight = FontWeight.Bold,
-        color = MaterialTheme.colorScheme.secondaryContainer,
-        modifier = Modifier
-            .padding(8.dp)
-            .height(50.dp),
-        textAlign = TextAlign.Center
-        )
+            text = names[i],
+            fontSize = 40.sp,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.secondaryContainer,
+            modifier = Modifier
+                .padding(8.dp)
+                .height(50.dp),
+            textAlign = TextAlign.Center
+            )
 
         Box(
             modifier = Modifier
