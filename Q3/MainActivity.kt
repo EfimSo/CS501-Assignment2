@@ -61,7 +61,7 @@ fun FunFact(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(       // animal name
+        Text( 
         text = names[i],
         fontSize = 40.sp,
         fontWeight = FontWeight.Bold,
@@ -86,7 +86,7 @@ fun FunFact(modifier: Modifier = Modifier) {
                 )
                 .padding(16.dp)
         ) {
-            Text(       // fun fact
+            Text(
                 text = text[i],
                 fontSize = 18.sp,
                 fontStyle = FontStyle.Italic,
