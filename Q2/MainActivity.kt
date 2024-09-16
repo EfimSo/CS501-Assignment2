@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             HW2Q2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Quote(
+                    Greeting(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 @Composable
-fun Quote(modifier: Modifier = Modifier) {
+fun Greeting(modifier: Modifier = Modifier) {
     val cal =  Calendar.getInstance();
     var fieldText by remember { mutableStateOf(value = "") }
     var greetingText by remember { mutableStateOf(value = "") }
@@ -120,7 +120,7 @@ fun Quote(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     HW2Q2Theme {
-        Quote()
+        Greeting()
     }
 }
 
